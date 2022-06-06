@@ -24,8 +24,9 @@ class Vidly extends Component {
             <tr>
               <th>Title</th>
               <th>Genre</th>
-              <th>Stock</th>
+              <th>Stock</th> 
               <th>Rate</th>
+              <th>Released Date</th>
               <th />
             </tr>
           </thead>
@@ -36,6 +37,7 @@ class Vidly extends Component {
                 <td>{movie.genre.name}</td>
                 <td>{movie.numberInStock}</td>
                 <td>{movie.dailyRentalRate}</td>
+                <td>{movie.publishDate.slice(0, 10)}</td>
                 <button
                   onClick={() => this.deleteHandler(movie)}
                   className="btn btn-danger btn-sm"

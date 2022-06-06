@@ -4,9 +4,7 @@ import Movies from "./component/Movies";
 function App() {
   return (
     <main className="container">
-      <h1>
-        <Movies />
-      </h1>
+      <Movies />
     </main>
   );
 }
